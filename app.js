@@ -20,7 +20,13 @@ function adicionarNomeNaLista(){
 function sortearAmigo() {
     const numSorteado = parseInt(Math.random() * listaAmigos.length);
     var tabelaAmigoSorteado = document.getElementById('resultado');
-    tabelaAmigoSorteado.innerHTML = `<li>${listaAmigos[numSorteado]}</li>`;
+
+    if (listaAmigos[numSorteado] == undefined) {
+        alert("Lista Vazia")
+    }
+    if (listaAmigos[numSorteado] != undefined) {
+        tabelaAmigoSorteado.innerHTML = `<li>${listaAmigos[numSorteado]}</li>`;
+    }
 }
 
 function reiniciarLista() {
