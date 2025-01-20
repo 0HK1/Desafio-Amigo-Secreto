@@ -1,24 +1,30 @@
-let listaAmigos = []
+let listaAmigos = [];
 
 function adicionarAmigo(){
-    var amigo = document.getElementById('amigo')
+    var amigo = document.getElementById('amigo');
     if (amigo != "") {
-        listaAmigos.push(amigo.value)
-        adicionarNomeNaLista()
+        listaAmigos.push(amigo.value);
+        adicionarNomeNaLista();
     }
     if (amigo == "") {
-        alert('Digite um Nome Válido')
+        alert('Digite um Nome Válido');
     }
-    amigo.value = ''
+    amigo.value = '';
 }
 
 function adicionarNomeNaLista(){
     var tabelaAmigos = document.getElementById('listaAmigos');
-    tabelaAmigos.innerHTML += `<li>${listaAmigos[listaAmigos.length - 1]}</li>`
+    tabelaAmigos.innerHTML += `<li>${listaAmigos[listaAmigos.length - 1]}</li>`;
 }
 
 function sortearAmigo() {
     const numSorteado = parseInt(Math.random() * listaAmigos.length);
     var tabelaAmigoSorteado = document.getElementById('resultado');
-    tabelaAmigoSorteado.innerHTML = `<li>${listaAmigos[numSorteado]}</li>`
+    tabelaAmigoSorteado.innerHTML = `<li>${listaAmigos[numSorteado]}</li>`;
+}
+
+function reiniciarLista() {
+    listaAmigos = [];
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
 }
