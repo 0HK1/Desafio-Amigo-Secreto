@@ -3,6 +3,8 @@
 ## Descrição
 Este projeto permite adicionar, exibir e realizar sorteios de amigos de uma lista dinâmica. O usuário pode adicionar nomes à lista e também realizar um sorteio de um amigo aleatório da lista. É possível reiniciar a lista a qualquer momento.
 
+link: https://0hk1.github.io/Desafio-Amigo-Secreto/
+
 ## Funcionalidades
 - **Adicionar Amigo**: Permite adicionar o nome de um amigo à lista.
 - **Exibir Lista**: A lista de amigos é atualizada dinamicamente na interface.
@@ -30,3 +32,4 @@ Este projeto permite adicionar, exibir e realizar sorteios de amigos de uma list
     - Basta clicar no arquivo `index.html` dentro do diretório do projeto.
 
 3. O projeto será exibido e você poderá interagir com ele diretamente no navegador.
+
